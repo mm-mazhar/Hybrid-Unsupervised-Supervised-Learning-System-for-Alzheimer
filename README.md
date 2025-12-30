@@ -1,4 +1,4 @@
-# Cognitive Health Prediction: A Hybrid Unsupervised & Supervised Learning System
+# Cognitive Health Prediction: A Hybrid Unsupervised & Supervised Learning System For Alzheimer's Disease
 
 ## 📌 Project Overview
 This research project aims to predict **Cognitive Health Scores** (`composite_score`) in an aging population. 
