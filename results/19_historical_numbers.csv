@@ -1,0 +1,4 @@
+source,reported_mae,reported_r2,n_rows,evaluation_set,features,comparable
+hybrid_inference_system_b.ipynb,34.76,0.481,746,test.csv,157 raw,False
+train.ipynb AutoGluon WeightedEnsemble_L2,35.19,0.3797,578,random split of train.csv,67 engineered,False
+d_strategyA.ipynb (best cluster),29.98,0.593,167,within-cluster split of train.csv,157 raw,False

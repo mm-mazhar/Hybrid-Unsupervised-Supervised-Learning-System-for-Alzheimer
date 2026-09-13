@@ -1,0 +1,9 @@
+model,reference,mae_model,mae_reference,mae_diff,ci_lo,ci_hi,verdict
+4_strategy_A_specialists,1b_lasso,34.5875,32.725,1.8624,0.7264,2.9655,reference better
+5_strategy_B_cluster_feature,1b_lasso,33.9104,32.725,1.1853,0.2617,2.1598,reference better
+6_strategy_C_oversampled,1b_lasso,33.8849,32.725,1.1598,0.1451,2.1685,reference better
+7_hybrid_router,1b_lasso,34.1755,32.725,1.4505,0.4217,2.4461,reference better
+4_strategy_A_specialists,2_random_forest_global,34.5875,33.7747,0.8127,0.0014,1.6134,reference better
+5_strategy_B_cluster_feature,2_random_forest_global,33.9104,33.7747,0.1357,-0.1266,0.3919,inconclusive
+6_strategy_C_oversampled,2_random_forest_global,33.8849,33.7747,0.1102,-0.3713,0.5836,inconclusive
+7_hybrid_router,2_random_forest_global,34.1755,33.7747,0.4008,-0.2082,1.0129,inconclusive

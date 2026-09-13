@@ -1,0 +1,5 @@
+model,roc_auc_mean,roc_auc_std,avg_precision_mean,avg_precision_std,brier_mean,brier_std,accuracy_mean,accuracy_std,balanced_accuracy_mean,balanced_accuracy_std,sensitivity_mean,sensitivity_std,specificity_mean,specificity_std
+1_logistic_regression,0.833,0.0249,0.6325,0.0398,0.1386,0.0127,0.7989,0.0227,0.6639,0.0269,0.3869,0.0587,0.9409,0.0162
+3_random_forest_cluster_aware,0.8313,0.0258,0.6309,0.042,0.1481,0.0102,0.7954,0.0252,0.7314,0.0332,0.5991,0.0609,0.8636,0.0215
+2_random_forest_global,0.8309,0.0269,0.6294,0.0461,0.1483,0.01,0.7936,0.0235,0.7327,0.0306,0.6068,0.0548,0.8585,0.0197
+0_dummy_prior,0.5,0.0,0.2568,0.0211,0.1911,0.0104,0.7432,0.0211,0.5,0.0,0.0,0.0,1.0,0.0

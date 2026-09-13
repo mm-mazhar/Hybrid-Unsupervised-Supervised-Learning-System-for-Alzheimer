@@ -1,0 +1,12 @@
+question,answer
+Best model on the external holdout,"1b_lasso: MAE 32.725 [30.9635, 34.5265], R2 0.544"
+Best conventional benchmark,"1b_lasso: MAE 32.725, R2 0.544"
+Best cluster-aware model,"6_strategy_C_oversampled: MAE 33.8849, R2 0.5089"
+Does any cluster-aware model beat the conventional benchmark on the holdout?,"4_strategy_A_specialists vs 1b_lasso: reference better (diff 1.8624 [0.7264, 2.9655]); 5_strategy_B_cluster_feature vs 1b_lasso: reference better (diff 1.1853 [0.2617, 2.1598]); 6_strategy_C_oversampled vs 1b_lasso: reference better (diff 1.1598 [0.1451, 2.1685]); 7_hybrid_router vs 1b_lasso: reference better (diff 1.4505 [0.4217, 2.4461]); 4_strategy_A_specialists vs 2_random_forest_global: reference better (diff 0.8127 [0.0014, 1.6134]); 5_strategy_B_cluster_feature vs 2_random_forest_global: inconclusive (diff 0.1357 [-0.1266, 0.3919]); 6_strategy_C_oversampled vs 2_random_forest_global: inconclusive (diff 0.1102 [-0.3713, 0.5836]); 7_hybrid_router vs 2_random_forest_global: inconclusive (diff 0.4008 [-0.2082, 1.0129])"
+Cluster stability across seeds,ARI 0.4882 +/- 0.1747
+Cluster stability under person-level bootstrap,ARI 0.4675 +/- 0.1311
+Cluster stability across measurement waves (2003 vs 2012),ARI 0.0776
+Does the saved K-Means reproduce training cluster shares on the holdout?,"yes, max absolute discrepancy 0.0080 (the old router's 69%-to-cluster-0 collapse was a router artifact)"
+Discrimination for the pre-specified binary outcome,"1_logistic_regression AUC 0.8330, Brier 0.1386; 3_random_forest_cluster_aware AUC 0.8313, Brier 0.1481; 2_random_forest_global AUC 0.8309, Brier 0.1483; 0_dummy_prior AUC 0.5000, Brier 0.1911"
+"Triage classifier, reframed",all_features (as published): accuracy 0.8861; intake_observable_only: accuracy 0.5933; majority-class baseline: accuracy 0.3482
+Was the cluster oversampling leaking?,"No. d_strategyC.ipynb split before resampling and touched training rows only. The real leak was upstream: K-Means, the scaler and the one-hot encoding were fitted on all rows, and splits were row-level so duplicate-UID twins straddled the boundary."

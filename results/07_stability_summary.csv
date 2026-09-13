@@ -1,0 +1,4 @@
+check,ari_mean,ari_sd
+"seed (20 seeds, pairwise)",0.4882,0.1747
+person-level bootstrap (100),0.4675,0.1311
+cross-wave (2003 vs 2012),0.0776,

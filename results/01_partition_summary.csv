@@ -1,0 +1,3 @@
+partition,n_rows,n_persons,rows_per_person_mean,persons_with_2_rows,target_mean,target_sd,target_min,target_max
+train (development),2889,2242,1.289,647,146.142,59.079,8.0,334.0
+test.csv (external holdout),746,570,1.309,176,146.338,61.084,9.0,318.0
